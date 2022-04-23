@@ -1,7 +1,7 @@
 const express = require("express");
 const userModel = require("../models/userModel");
 const jwt = require("jsonwebtoken");
-const { sendMail } = require("../utility/nodemailer");
+
 
 
 //sign up user
@@ -9,7 +9,7 @@ module.exports.signup = async function signup(req, res) {
   try {
     let dataObj = req.body;
     let user = await userModel.create(dataObj);
-    sendMail("signup",user);
+    //sendMail("signup",user);
     if (user) {
       return res.json({
         message: "user signed up",
