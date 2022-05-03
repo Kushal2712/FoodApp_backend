@@ -2,7 +2,7 @@ const express = require("express");
 const userModel = require("../models/userModel");
 const jwt = require("jsonwebtoken");
 
-
+const { JWT_KEY } = require("../secrets");
 
 //sign up user
 module.exports.signup = async function signup(req, res) {

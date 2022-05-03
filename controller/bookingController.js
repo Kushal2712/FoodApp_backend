@@ -1,4 +1,4 @@
-let SK="sk_test_pL1X84CZrOSOYRkyyvKuCwR000a36t5jwK";
+let SK="sk_test_51KmPXBSJXxGg8IWsprrcLtO4tUQahl4PCWNAMKrp9lzQfSpba3vLobglNnJJv2XRHTeF9rZGjCkgSKBMVDNXzAEH00U0OAIVRS";
 const stripe=require('stripe')(SK);
 const planModel = require("../models/planModel");
 const userModel = require("../models/userModel");

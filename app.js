@@ -7,7 +7,7 @@ app.use(express.static('public/build'));
 const cookieParser=require('cookie-parser');
 //middleware func-> post, front-> json
 app.use(express.json()); //global middleware 
-const port=process.env.PORT || 6500;
+const port=process.env.PORT || 7500;
 app.listen(port,function(){
     console.log(`server listening on port ${port}`); 
 });
