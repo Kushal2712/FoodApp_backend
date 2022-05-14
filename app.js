@@ -32,6 +32,11 @@ server.use(cookieParser(),(req , res , next)=>{
     // console.log(req.cookies.jwt);
     next();
 })
+const port = process.env.PORT || 3000;
+
+server.listen(port, function () {
+    console.log("Server is started at " +  port);
+})
 
 //view engine (we are here working with pug files)
 server.set("view engine", "pug");
